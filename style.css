@@ -1,0 +1,46 @@
+html,
+body{
+    box-sizing: border-box;
+    height:100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+}
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+    max-height: 600px;
+    height: 100%;
+    padding: 50px;
+    aspect-ratio: 1;
+}
+
+.row{
+    flex: auto;
+    display: flex;
+}
+
+.square{
+    background-color: pink;
+    flex: auto;
+    border: 1px solid black;
+}
+
+.colorChange{
+    background-color: green;
+}
