@@ -8,8 +8,23 @@
     </head>
     <body>
         <h1>ETCH-A-SKETCH</h1>
-        <div id="reset-button-container">
-            <button class="reset-button">RESET</button>
+
+        <div id="grid-size-slider-container" class="slide-container">
+            <input type="range" min="1" max="100" value="16" class="slider">
+        </div>
+        <div id="slider-value-container" class="slider-value"></div>
+
+        <div id="rainbow-button-container">
+            <button class="color-button">RAINBOW</button>
+        </div>
+        <div id="black-button-container">
+            <button class="color-button">BLACK</button>
+        </div>
+        <div id="darken-button-container">
+            <button class="color-button">DARKEN</button>
+        </div>
+        <div id="erase-button-container">
+            <button class="color-button">ERASE</button>
         </div>
         <div id="sketch-pad" class="grid-container"></div>
         
