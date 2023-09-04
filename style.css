@@ -11,42 +11,88 @@ body{
 }
 
 body{
-    display: flex;
     align-items: center;
+    background-color: rgb(24, 24, 24);
+    display: flex;
     flex-direction: column;
-
+    gap: 50px;
 }
 
 h1{
+    color: rgb(233, 233, 233);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: bold;
+    margin: 0px;
+    text-align: center;
+}
+
+.header{
+    padding: 30px 0 0 0;
+    width: 100%;
 }
 
 .grid-container{
+    aspect-ratio: 1;
+    border: 10px solid rgb(233, 233, 233);
     display: flex;
     flex-direction: column;
-    max-height: 600px;
-    height: 100%;
+    margin: 0 auto;
+    max-width: 600px;
+    min-height: 200px;
+    min-width: 200px;
     padding: 10px;
-    aspect-ratio: 1;
-
-    border: 10px dotted pink;
+    width: 100%;
 }
 
 .row{
-    flex: auto;
     display: flex;
+    flex: auto;
 }
 
 .square{
     flex: auto;
-    /*
-    border: 1px solid black;
-    */
-    
 }
 
-.colorChange{
-    background-color: black;
+.ui{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1000px;
+    padding: 20px;
+    width: 100%;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+}
+
+.spacer{
+    margin: 0 auto;
+    visibility: hidden;
+    width:133px;
+}
+
+.slider-value{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+button{
+    background-color: rgb(233, 233, 233);
+    border: 3px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
 }
 
